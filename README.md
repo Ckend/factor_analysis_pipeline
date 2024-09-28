@@ -1,11 +1,19 @@
 # streamlit_alphalens
 基于streamlit的因子分析app
 
+Thanks to https://github.com/hugo2046/streamlit_alphalens
+
+基于原版代码修改了部分逻辑，但目前只支持单个因子的研究，后续希望继续优化。
+
 ## 运行
 
 **使用步骤**
 
-1. 下载测试用数据将csv放入data文件下
+0. 请见 data 目录下 factor 和 price 的格式。
+
+1. ```
+pip install -r requirements.txt
+```
 
 2. ```bash
    # 切换到streamlit_alphalens目录下
@@ -37,23 +45,3 @@
 **因子看板**
 
 ![board.png](https://github.com/hugo2046/streamlit_alphalens/blob/dev/img/board.png?raw=true)
-
-**TO DO**
-
-- [ ] 接入qlib
-- [ ] 接入backtrader
-- [x] 在alphalens中添加一些自定义评价图表
-
-------
-
-- **alphalens**新增plotly_plotting提供plotly的相关图表,stramlit_tear提供可供streamlit可用的相关报表；
-- **data_service**简单的数据加载相关代码；
-- **page**可视化相关所需页面
-
-------
-
-*data中测试数据下载:*
-
-*链接：https://pan.baidu.com/s/1ZD3gKOj6DlBMIuQg6HccZg?pwd=djpt* 
-*提取码：djpt* 
-"# alphalens_web" 
